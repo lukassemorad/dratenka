@@ -1,7 +1,7 @@
 const translations = {
     en: {
         "meta.title": "Steel Wool Products - Premium Quality",
-        "nav.siteName": "Steel Wool",
+        "nav.siteName": "waschmeister.cz",
         "nav.home": "Home",
         "nav.products": "Products",
         "nav.about": "About",
@@ -58,7 +58,7 @@ const translations = {
     },
     cs: {
         "meta.title": "Ocelová vata - Prémiová kvalita",
-        "nav.siteName": "Ocelová vata",
+        "nav.siteName": "waschmeister.cz",
         "nav.home": "Domů",
         "nav.products": "Produkty",
         "nav.about": "O nás",
