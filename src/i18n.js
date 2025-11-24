@@ -55,7 +55,7 @@ const translations = {
         "footer.quicklinks.about": "About",
         "footer.quicklinks.contact": "Contact",
         "footer.copyright": "© 2025 Steel Wool Products. All rights reserved.",
-        "consent.message": "This website uses Microsoft Clarity for analytics. By clicking \"Accept\", you agree to the use of analytics tools.",
+        "consent.message": "This website uses analytics tools. By clicking \"Accept\", you agree to their use.",
         "consent.accept": "Accept",
         "consent.decline": "Decline"
     },
@@ -115,7 +115,7 @@ const translations = {
         "footer.quicklinks.about": "O nás",
         "footer.quicklinks.contact": "Kontakt",
         "footer.copyright": "© 2025 Ocelová vata. Všechna práva vyhrazena.",
-        "consent.message": "Tato stránka používá Microsoft Clarity pro analýzu návštěvnosti. Kliknutím na \"Souhlasím\" souhlasíte s použitím analytických nástrojů.",
+        "consent.message": "Tato stránka používá nástroje pro analýzu návštěvnosti. Kliknutím na \"Souhlasím\" souhlasíte s jejich použitím.",
         "consent.accept": "Souhlasím",
         "consent.decline": "Odmítnout"
     }
