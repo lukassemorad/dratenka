@@ -6,41 +6,8 @@
     <title>waschmeister.cz</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%2378716a' d='M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../src/css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        section {
-            scroll-margin-top: 4rem;
-        }
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .form-message {
-            animation: slideDown 0.3s ease-out;
-        }
-        nav {
-            transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-        }
-        nav.transparent {
-            background-color: rgba(41, 37, 36, 0.7);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
-        #mobile-menu.transparent {
-            background-color: rgba(41, 37, 36, 0.9);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
-    </style>
 </head>
 <body class="bg-gradient-to-br from-stone-50 to-gray-100 min-h-screen">
     <nav id="main-nav" class="bg-stone-800 shadow-lg sticky top-0 z-50 relative">
@@ -93,11 +60,16 @@
                 <p class="text-xl text-stone-200 mb-8 max-w-3xl mx-auto" data-i18n="hero.subtitle">
                     Ručně vyráběné produkty z ocelové vaty pro čištění, renovaci a kreativní projekty. Kvalita, které můžete důvěřovat.
                 </p>
-                <div class="flex gap-4 justify-center">
-                    <a href="#products" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition transform hover:scale-105 inline-block" data-i18n="hero.viewProducts">
-                        Zobrazit produkty
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="pure/" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-4 px-10 rounded-lg shadow-lg transition transform hover:scale-105 inline-block text-lg min-w-[200px] text-center">
+                        Čistá ocelová vata
                     </a>
-                    <a href="#contact" class="bg-stone-700 hover:bg-stone-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg border-2 border-stone-600 transition inline-block" data-i18n="hero.contact">
+                    <a href="soap/" class="bg-stone-700 hover:bg-stone-600 text-white font-semibold py-4 px-10 rounded-lg shadow-lg border-2 border-stone-600 transition transform hover:scale-105 inline-block text-lg min-w-[200px] text-center">
+                        Ocelová vata s mýdlem
+                    </a>
+                </div>
+                <div class="flex gap-4 justify-center mt-6">
+                    <a href="#contact" class="bg-stone-700/50 hover:bg-stone-600/50 text-white font-semibold py-3 px-8 rounded-lg shadow-lg border-2 border-stone-600/50 transition inline-block" data-i18n="hero.contact">
                         Kontaktujte nás
                     </a>
                 </div>
@@ -289,102 +261,7 @@
     </footer>
 
     <script type="module" src="../src/i18n.js"></script>
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
-            const closeIcon = document.getElementById('close-icon');
-            const nav = document.getElementById('main-nav');
-            
-            menu.classList.toggle('hidden');
-            menuIcon.classList.toggle('hidden');
-            closeIcon.classList.toggle('hidden');
-            
-            if (!menu.classList.contains('hidden') && nav.classList.contains('transparent')) {
-                menu.classList.add('transparent');
-            } else if (menu.classList.contains('hidden')) {
-                menu.classList.remove('transparent');
-            }
-        }
-        
-        function closeMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
-            const closeIcon = document.getElementById('close-icon');
-            
-            menu.classList.add('hidden');
-            menuIcon.classList.remove('hidden');
-            closeIcon.classList.add('hidden');
-        }
-        
-        document.getElementById('mobile-menu-button').addEventListener('click', toggleMobileMenu);
-        
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', closeMobileMenu);
-        });
-
-        const nav = document.getElementById('main-nav');
-        const mobileMenu = document.getElementById('mobile-menu');
-        let lastScroll = 0;
-
-        function handleScroll() {
-            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-            
-            if (currentScroll > 50) {
-                nav.classList.add('transparent');
-                if (!mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.add('transparent');
-                }
-            } else {
-                nav.classList.remove('transparent');
-                mobileMenu.classList.remove('transparent');
-            }
-            
-            lastScroll = currentScroll;
-        }
-
-        window.addEventListener('scroll', handleScroll);
-        handleScroll();
-    </script>
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const form = this;
-            const formData = new FormData(form);
-            const messageDiv = document.getElementById('form-message');
-            
-            fetch(form.action, {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    showSuccessMessage(messageDiv, form);
-                } else {
-                    showErrorMessage(messageDiv);
-                }
-            })
-            .catch(error => {
-                showErrorMessage(messageDiv);
-            });
-        });
-        
-        function showSuccessMessage(messageDiv, form) {
-            const successText = window.getTranslation ? window.getTranslation('form.success') : 'Zpráva byla úspěšně odeslána! Brzy se vám ozveme.';
-            messageDiv.className = 'form-message p-6 rounded-xl mb-6 bg-green-600 text-white text-center font-semibold text-lg shadow-lg border-2 border-green-500';
-            messageDiv.innerHTML = '<div class="flex items-center justify-center gap-4"><svg width="20" height="20" class="flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>' + successText + '</span></div>';
-            messageDiv.classList.remove('hidden');
-            form.reset();
-        }
-        
-        function showErrorMessage(messageDiv) {
-            const errorText = window.getTranslation ? window.getTranslation('form.error') : 'Chyba při odesílání zprávy. Zkuste to prosím znovu.';
-            messageDiv.className = 'form-message p-6 rounded-xl mb-6 bg-red-600 text-white text-center font-semibold text-lg shadow-lg border-2 border-red-500';
-            messageDiv.innerHTML = '<div class="flex items-center justify-center gap-4"><svg width="20" height="20" class="flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>' + errorText + '</span></div>';
-            messageDiv.classList.remove('hidden');
-        }
-    </script>
+    <script src="../src/js/main.js"></script>
 </body>
 </html>
 

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocelová vata s mýdlem - waschmeister.cz</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+    <link rel="stylesheet" href="../../src/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-stone-50 to-gray-100 min-h-screen">
+    <nav id="main-nav" class="bg-stone-800 shadow-lg sticky top-0 z-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="../" class="text-2xl font-bold text-stone-100 hover:text-amber-400 transition cursor-pointer">waschmeister.cz</a>
+                </div>
+                <div class="hidden lg:flex items-center space-x-4 mr-24">
+                    <a href="../" class="text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition">Domů</a>
+                    <a href="../#products" class="text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition">Produkty</a>
+                    <a href="../#about" class="text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition">O nás</a>
+                    <a href="../#contact" class="text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition">Kontakt</a>
+                </div>
+                <button id="mobile-menu-button" class="lg:hidden text-stone-200 hover:text-amber-400 p-2" aria-label="Toggle menu">
+                    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden absolute top-16 left-0 right-0 bg-stone-800 border-t border-stone-700 shadow-lg">
+            <div class="px-4 py-4 space-y-3">
+                <a href="../" class="block text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-base font-medium transition" onclick="closeMobileMenu()">Domů</a>
+                <a href="../#products" class="block text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-base font-medium transition" onclick="closeMobileMenu()">Produkty</a>
+                <a href="../#about" class="block text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-base font-medium transition" onclick="closeMobileMenu()">O nás</a>
+                <a href="../#contact" class="block text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-base font-medium transition" onclick="closeMobileMenu()">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-20 px-4 bg-gradient-to-b from-stone-800 to-stone-700 text-white">
+            <div class="max-w-7xl mx-auto text-center">
+                <h1 class="text-5xl font-extrabold mb-6">Ocelová vata s mýdlem</h1>
+                <p class="text-xl text-stone-200 mb-8 max-w-3xl mx-auto">
+                    Ocelová vata s integrovaným mýdlem pro snadné a efektivní čištění
+                </p>
+            </div>
+        </section>
+
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-xl p-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Detail produktu</h2>
+                    <p class="text-gray-600 mb-4">
+                        Naše ocelová vata s mýdlem kombinuje účinnost ocelových vláken s čisticí silou mýdla pro ještě snadnější a efektivnější čištění.
+                    </p>
+                    <div class="mt-8">
+                        <a href="../" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition inline-block">
+                            Zpět na hlavní stránku
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="../../src/i18n.js"></script>
+    <script src="../../src/js/main.js"></script>
+</body>
+</html>
+
