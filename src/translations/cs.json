@@ -41,6 +41,9 @@
   "footer.legal.privacy": "Soukromí",
   "footer.legal.terms": "Podmínky",
   "footer.legal.cookies": "Cookies",
-  "footer.copyright": "© 2025 MůjWeb. Všechna práva vyhrazena."
+  "footer.copyright": "© 2025 MůjWeb. Všechna práva vyhrazena.",
+  "consent.message": "Tato stránka používá Microsoft Clarity pro analýzu návštěvnosti. Kliknutím na \"Souhlasím\" souhlasíte s použitím analytických nástrojů.",
+  "consent.accept": "Souhlasím",
+  "consent.decline": "Odmítnout"
 }
 
