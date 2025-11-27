@@ -71,17 +71,10 @@ nav.transparent {
     transition: transform 0.4s ease-out, opacity 0.4s ease-out;
 }
 
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
+/* Removed static float animation - now handled by JavaScript repelling effect */
 .animate-float {
-    animation: float 3s ease-in-out infinite;
+    /* Elements are now positioned absolutely and controlled by JavaScript */
+    transition: opacity 0.3s ease;
 }
 
 .animate-logo-entrance {
