@@ -15,8 +15,8 @@
   "features.security.description": "Enterprise-grade security to keep your data protected at all times.",
   "features.easy.title": "Easy to Use",
   "features.easy.description": "Intuitive interface designed for users of all skill levels.",
-  "cta.title": "Ready to Get Started?",
-  "cta.description": "Join thousands of satisfied users who have transformed their workflow with our platform.",
+  "cta.title": "Interested in our product?",
+  "cta.description": "Contact us with any questions about our steel wool products. We're happy to advise you and help find the best solution for your needs. Write to us also if you want to order the product.",
   "cta.signUp": "Sign Up Now",
   "testimonials.title": "What Our Users Say",
   "testimonials.one.quote": "This platform has completely changed how I work. The interface is clean and everything just works seamlessly.",
@@ -27,6 +27,8 @@
   "testimonials.two.role": "Developer",
   "footer.company.title": "Company",
   "footer.company.about": "About Us",
+  "footer.company.name": "WASCHMEISTER",
+  "footer.company.combined": "Premium steel wool products. Specializing in high-quality steel wool for cleaning, restoration, and industrial applications since 2025.",
   "footer.company.careers": "Careers",
   "footer.company.blog": "Blog",
   "footer.product.title": "Product",
@@ -41,6 +43,6 @@
   "footer.legal.privacy": "Privacy",
   "footer.legal.terms": "Terms",
   "footer.legal.cookies": "Cookies",
-  "footer.copyright": "© 2025 MySite. All rights reserved."
+  "footer.copyright": "© 2025 WASCHMEISTER. All rights reserved."
 }
 

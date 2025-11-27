@@ -3,46 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>waschmeister.cz</title>
+    <title>WASCHMEISTER.CZ</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%2378716a' d='M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../src/css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        section {
-            scroll-margin-top: 4rem;
-        }
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .form-message {
-            animation: slideDown 0.3s ease-out;
-        }
-    </style>
 </head>
 <body class="bg-gradient-to-br from-stone-50 to-gray-100 min-h-screen">
-    <nav class="bg-stone-800 shadow-lg sticky top-0 z-50 relative">
+    <nav id="main-nav" class="bg-stone-700 shadow-lg sticky top-0 z-50 relative animate-slide-in-down">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0">
-                    <a href="#home" class="text-2xl font-bold text-stone-100 hover:text-amber-400 transition cursor-pointer" data-i18n="nav.siteName">waschmeister.cz</a>
+                    <a href="#home" class="cursor-pointer">
+                        <img src="../src/assets/logo_text.png" alt="waschmeister.cz" class="h-14 w-auto hover:opacity-80 transition-opacity">
+                    </a>
                 </div>
                 <div class="hidden lg:flex items-center space-x-4 mr-24">
-                    <a href="#home" class="text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition" data-i18n="nav.home">Domů</a>
-                    <a href="#products" class="text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition" data-i18n="nav.products">Produkty</a>
-                    <a href="#about" class="text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition" data-i18n="nav.about">O nás</a>
-                    <a href="#contact" class="text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition" data-i18n="nav.contact">Kontakt</a>
+                    <a href="#home" class="text-stone-200 hover:text-stone-300 px-3 py-2 rounded-md text-sm font-medium transition" data-i18n="nav.home">Domů</a>
+                    <a href="#products" class="text-stone-200 hover:text-stone-300 px-3 py-2 rounded-md text-sm font-medium transition" data-i18n="nav.products">Produkty</a>
+                    <a href="#about" class="text-stone-200 hover:text-stone-300 px-3 py-2 rounded-md text-sm font-medium transition" data-i18n="nav.about">O nás</a>
+                    <a href="#contact" class="text-stone-200 hover:text-stone-300 px-3 py-2 rounded-md text-sm font-medium transition" data-i18n="nav.contact">Kontakt</a>
                 </div>
-                <button id="mobile-menu-button" class="lg:hidden text-stone-200 hover:text-amber-400 p-2" aria-label="Toggle menu">
+                <button id="mobile-menu-button" class="lg:hidden text-stone-200 hover:text-stone-300 p-2" aria-label="Toggle menu">
                     <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -52,84 +34,158 @@
                 </button>
             </div>
         </div>
-        <div class="hidden lg:flex absolute right-4 top-0 h-16 items-center gap-2">
-            <button onclick="setLanguage('en')" class="px-3 py-1 text-sm rounded hover:bg-stone-700 text-stone-200 transition">EN</button>
-            <button onclick="setLanguage('cs')" class="px-3 py-1 text-sm rounded hover:bg-stone-700 text-stone-200 transition">CZ</button>
-        </div>
         
         <div id="mobile-menu" class="hidden lg:hidden absolute top-16 left-0 right-0 bg-stone-800 border-t border-stone-700 shadow-lg">
             <div class="px-4 py-4 space-y-3">
-                <a href="#home" class="block text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-base font-medium transition" data-i18n="nav.home" onclick="closeMobileMenu()">Domů</a>
-                <a href="#products" class="block text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-base font-medium transition" data-i18n="nav.products" onclick="closeMobileMenu()">Produkty</a>
-                <a href="#about" class="block text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-base font-medium transition" data-i18n="nav.about" onclick="closeMobileMenu()">O nás</a>
-                <a href="#contact" class="block text-stone-200 hover:text-amber-400 px-3 py-2 rounded-md text-base font-medium transition" data-i18n="nav.contact" onclick="closeMobileMenu()">Kontakt</a>
-                <div class="pt-4 border-t border-stone-700 flex gap-2">
-                    <button onclick="setLanguage('en'); closeMobileMenu();" class="flex-1 px-3 py-2 text-sm rounded bg-stone-700 hover:bg-stone-600 text-stone-200 transition">EN</button>
-                    <button onclick="setLanguage('cs'); closeMobileMenu();" class="flex-1 px-3 py-2 text-sm rounded bg-stone-700 hover:bg-stone-600 text-stone-200 transition">CZ</button>
-                </div>
+                <a href="#home" class="block text-stone-200 hover:text-stone-300 px-3 py-2 rounded-md text-base font-medium transition" data-i18n="nav.home" onclick="closeMobileMenu()">Domů</a>
+                <a href="#products" class="block text-stone-200 hover:text-stone-300 px-3 py-2 rounded-md text-base font-medium transition" data-i18n="nav.products" onclick="closeMobileMenu()">Produkty</a>
+                <a href="#about" class="block text-stone-200 hover:text-stone-300 px-3 py-2 rounded-md text-base font-medium transition" data-i18n="nav.about" onclick="closeMobileMenu()">O nás</a>
+                <a href="#contact" class="block text-stone-200 hover:text-stone-300 px-3 py-2 rounded-md text-base font-medium transition" data-i18n="nav.contact" onclick="closeMobileMenu()">Kontakt</a>
             </div>
         </div>
     </nav>
 
     <main>
-        <section id="home" class="py-20 px-4 bg-gradient-to-b from-stone-800 to-stone-700 text-white">
-            <div class="max-w-7xl mx-auto text-center">
-                <h2 class="text-5xl font-extrabold mb-6" data-i18n="hero.title">
-                    Prémiové produkty z ocelové vaty
-                </h2>
-                <p class="text-xl text-stone-200 mb-8 max-w-3xl mx-auto" data-i18n="hero.subtitle">
-                    Ručně vyráběné produkty z ocelové vaty pro čištění, renovaci a kreativní projekty. Kvalita, které můžete důvěřovat.
-                </p>
-                <div class="flex gap-4 justify-center">
-                    <a href="#products" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition transform hover:scale-105 inline-block" data-i18n="hero.viewProducts">
-                        Zobrazit produkty
+        <section id="home" class="relative px-4 min-h-[80vh] flex items-center justify-center overflow-hidden">
+            <!-- Floating background elements -->
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <!-- Top-left quadrant cluster -->
+                <div class="absolute w-16 h-16 bg-pink-500 rounded-full animate-float opacity-28" style="top: 8%; left: 6%; animation-delay: -5s;"></div>
+                <div class="absolute w-10 h-10 bg-stone-300 rounded-full animate-float opacity-16" style="top: 15%; left: 18%; animation-delay: -2s;"></div>
+                <div class="absolute w-8 h-8 bg-pink-600 rounded-full animate-float opacity-22" style="top: 22%; left: 8%; animation-delay: -3.5s;"></div>
+                <div class="absolute w-12 h-12 bg-stone-400 rounded-full animate-float opacity-30" style="top: 5%; left: 25%; animation-delay: -1s;"></div>
+
+                <!-- Top-right quadrant cluster -->
+                <div class="absolute w-14 h-14 bg-pink-300 rounded-full animate-float opacity-18" style="top: 10%; right: 12%; animation-delay: -4s;"></div>
+                <div class="absolute w-9 h-9 bg-stone-600 rounded-full animate-float opacity-25" style="top: 18%; right: 6%; animation-delay: -2.5s;"></div>
+                <div class="absolute w-11 h-11 bg-pink-400 rounded-full animate-float opacity-20" style="top: 25%; right: 20%; animation-delay: -3.8s;"></div>
+                <div class="absolute w-7 h-7 bg-stone-500 rounded-full animate-float opacity-14" style="top: 8%; right: 25%; animation-delay: -1.5s;"></div>
+
+                <!-- Bottom-left quadrant cluster -->
+                <div class="absolute w-13 h-13 bg-stone-300 rounded-full animate-float opacity-26" style="bottom: 20%; left: 8%; animation-delay: -4.2s;"></div>
+                <div class="absolute w-15 h-15 bg-pink-600 rounded-full animate-float opacity-15" style="bottom: 12%; left: 22%; animation-delay: -2.8s;"></div>
+                <div class="absolute w-9 h-9 bg-stone-400 rounded-full animate-float opacity-28" style="bottom: 25%; left: 15%; animation-delay: -3.2s;"></div>
+                <div class="absolute w-12 h-12 bg-pink-300 rounded-full animate-float opacity-20" style="bottom: 8%; left: 5%; animation-delay: -1.8s;"></div>
+
+                <!-- Bottom-right quadrant cluster -->
+                <div class="absolute w-10 h-10 bg-stone-500 rounded-full animate-float opacity-24" style="bottom: 15%; right: 8%; animation-delay: -3s;"></div>
+                <div class="absolute w-14 h-14 bg-pink-200 rounded-full animate-float opacity-18" style="bottom: 22%; right: 18%; animation-delay: -4.5s;"></div>
+                <div class="absolute w-8 h-8 bg-stone-200 rounded-full animate-float opacity-30" style="bottom: 8%; right: 22%; animation-delay: -2.2s;"></div>
+                <div class="absolute w-11 h-11 bg-pink-500 rounded-full animate-float opacity-16" style="bottom: 28%; right: 12%; animation-delay: -0.8s;"></div>
+
+                <!-- Center area with organic spacing -->
+                <div class="absolute w-9 h-9 bg-pink-400 rounded-full animate-float opacity-22" style="top: 38%; left: 42%; animation-delay: -1.3s;"></div>
+                <div class="absolute w-13 h-13 bg-stone-600 rounded-full animate-float opacity-14" style="top: 55%; right: 38%; animation-delay: -2.7s;"></div>
+                <div class="absolute w-7 h-7 bg-pink-300 rounded-full animate-float opacity-26" style="bottom: 35%; left: 48%; animation-delay: -0.5s;"></div>
+
+                <!-- Connecting elements between quadrants -->
+                <div class="absolute w-6 h-6 bg-pink-400 rounded-full animate-float opacity-20" style="top: 45%; left: 15%; animation-delay: -1.7s;"></div>
+                <div class="absolute w-8 h-8 bg-stone-300 rounded-full animate-float opacity-25" style="top: 50%; right: 15%; animation-delay: -3.4s;"></div>
+            </div>
+
+            <div class="relative z-10 flex flex-col items-center justify-center text-center">
+                <img src="../src/assets/logo_no_bg.png" class="opacity-70 animate-logo-entrance mb-8" alt="Logo">
+
+                <!-- Tagline with fade-in animation -->
+                <div class="animate-fade-in" style="animation-delay: 0.5s;">
+                    <p class="text-stone-600 text-xl font-light tracking-wide mb-4 opacity-90">
+                        Prémiová ocelová vlna pro profesionální výsledky
+                    </p>
+                    <div class="w-32 h-px bg-gradient-to-r from-transparent via-pink-400 to-transparent mx-auto"></div>
+                </div>
+            </div>
+
+            <!-- Gradient overlay connecting to products section -->
+            <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-stone-50/20 to-stone-50/60 pointer-events-none"></div>
+        </section>
+
+        <section id="products" class="py-8 px-4 bg-gradient-to-br from-stone-50 via-stone-100 to-pink-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16 mt-8 animate-fade-in">
+                    <div class="flex justify-center items-center space-x-2">
+                        <div class="w-12 h-px bg-pink-600"></div>
+                        <i class="fas fa-chevron-down text-pink-600 text-5xl animate-bounce cursor-pointer hover:text-pink-700 hover:scale-125 transition-all duration-300" onclick="scrollToProducts()"></i>
+                        <div class="w-12 h-px bg-pink-600"></div>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    <a href="pure/" class="bg-gradient-to-br from-white via-stone-50 to-stone-100 rounded-xl shadow-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 cursor-pointer block border-2 border-stone-300 group relative animate-slide-in-up">
+                        <div class="absolute -top-1 -right-1 w-24 h-24 bg-stone-700 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-300 animate-breathe"></div>
+                        <div class="absolute -bottom-2 -left-2 w-16 h-16 bg-pink-800 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-300 animate-breathe"></div>
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="../src/assets/pure-showcase-1.png" alt="WASCHMEISTER.CZ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-stone-800/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-4 left-4 bg-gradient-to-r from-stone-800 to-stone-900 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                                <i class="fas fa-star text-pink-800 mr-1"></i>
+                                Prémiová kvalita
+                            </div>
+                            <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-arrow-right text-white text-2xl bg-stone-800/80 rounded-full p-2"></i>
+                            </div>
+                        </div>
+                        <div class="p-8 bg-gradient-to-b from-white to-stone-50/50">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-stone-700 transition-colors">Čistá ocelová vlna - WASCHMEISTER.CZ</h4>
+                            <p class="text-gray-600 mb-4 text-lg leading-relaxed">Základní varianta vyrobena z čistého kovu pro profesionální čištění a renovaci. Neobsahuje ropné složky a je vhodná pro ekologické provozy.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center text-stone-600 text-sm">
+                                    <i class="fas fa-tools mr-2 text-stone-500"></i>
+                                    <span>Profesionální nástroj</span>
+                                </div>
+                                <div class="w-32 bg-gradient-to-r from-stone-700 to-stone-800 hover:from-stone-800 hover:to-stone-900 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 text-center shadow-lg hover:shadow-xl transform hover:scale-105 text-sm">
+                                    Zjistit více
+                                </div>
+                            </div>
+                        </div>
                     </a>
-                    <a href="#contact" class="bg-stone-700 hover:bg-stone-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg border-2 border-stone-600 transition inline-block" data-i18n="hero.contact">
-                        Kontaktujte nás
+                    <a href="soap/" class="bg-gradient-to-br from-white via-soap-pink-100 to-soap-pink-50 rounded-xl shadow-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 cursor-pointer block border-2 border-soap-pink-500/30 group relative animate-slide-in-up delay-100">
+                        <div class="absolute -top-1 -right-1 w-20 h-20 bg-soap-pink-500 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-300 animate-breathe"></div>
+                        <div class="absolute -bottom-2 -left-2 w-16 h-16 bg-soap-pink-600 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-300 animate-breathe"></div>
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="../src/assets/soap-showcase-1.jpg" alt="WASCHMEISTER.CZ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-soap-pink-600/40 via-soap-pink-500/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-4 left-4 bg-gradient-to-r from-soap-pink-500 to-soap-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                                <i class="fas fa-soap text-soap-pink-100 mr-1"></i>
+                                S mýdlem
+                            </div>
+                            <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-arrow-right text-white text-2xl bg-soap-pink-500/80 rounded-full p-2"></i>
+                            </div>
+                        </div>
+                        <div class="p-8 bg-gradient-to-b from-white to-soap-pink-100/50">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-soap-pink-500 transition-colors">Ocelová vlna s mýdlem - WASCHMEISTER.CZ</h4>
+                            <p class="text-gray-600 mb-4 text-lg leading-relaxed">Varianta s obsahem probarveného sodného mýdla pro zlepšení mycího účinku. Ideální pro efektivní čištění bez nutnosti dodatečného namáčení.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center text-soap-pink-700 text-sm">
+                                    <i class="fas fa-hand-sparkles mr-2 text-soap-pink-500"></i>
+                                    <span>Snadné použití</span>
+                                </div>
+                                <div class="w-32 bg-gradient-to-r from-soap-pink-500 to-soap-pink-600 hover:from-soap-pink-600 hover:to-soap-pink-500 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 text-center shadow-lg hover:shadow-xl transform hover:scale-105 text-sm">
+                                    Zjistit více
+                                </div>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="products" class="py-16 px-4 bg-stone-100">
-            <div class="max-w-7xl mx-auto">
-                <h3 class="text-3xl font-bold text-center text-gray-900 mb-12" data-i18n="products.title">Naše produkty</h3>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                        <div class="h-48 bg-gradient-to-br from-stone-300 to-stone-400 flex items-center justify-center">
-                            <svg class="w-24 h-24 text-stone-600" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                            </svg>
-                        </div>
-                        <div class="p-6">
-                            <h4 class="text-xl font-semibold text-gray-900 mb-2" data-i18n="products.fine.title">Jemná jakost</h4>
-                            <p class="text-gray-600 mb-4" data-i18n="products.fine.description">Ultrajemná ocelová vata pro jemné čisticí a leštící úkoly.</p>
-                            <button class="w-full bg-stone-700 hover:bg-stone-800 text-white font-semibold py-2 px-4 rounded transition" data-i18n="products.learnMore">Zjistit více</button>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                        <div class="h-48 bg-gradient-to-br from-amber-300 to-amber-400 flex items-center justify-center">
-                            <svg class="w-24 h-24 text-amber-700" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                            </svg>
-                        </div>
-                        <div class="p-6">
-                            <h4 class="text-xl font-semibold text-gray-900 mb-2" data-i18n="products.medium.title">Střední jakost</h4>
-                            <p class="text-gray-600 mb-4" data-i18n="products.medium.description">Univerzální střední ocelová vata pro obecné čištění a renovační práce.</p>
-                            <button class="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2 px-4 rounded transition" data-i18n="products.learnMore">Zjistit více</button>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                        <div class="h-48 bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center">
-                            <svg class="w-24 h-24 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                            </svg>
-                        </div>
-                        <div class="p-6">
-                            <h4 class="text-xl font-semibold text-gray-900 mb-2" data-i18n="products.coarse.title">Hrubá jakost</h4>
-                            <p class="text-gray-600 mb-4" data-i18n="products.coarse.description">Odolná hrubá ocelová vata pro tvrdé odstraňování rzi a intenzivní čištění.</p>
-                            <button class="w-full bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded transition" data-i18n="products.learnMore">Zjistit více</button>
-                        </div>
+        <section id="company-description" class="py-16 px-4 bg-white">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">O společnosti WASCHMEISTER</h2>
+                    <div class="w-24 h-1 bg-pink-600 mx-auto"></div>
+                </div>
+                <div class="prose prose-lg mx-auto text-gray-700 leading-relaxed max-w-3xl">
+                    <p class="mb-4">
+                        WASCHMEISTER je specializovaným výrobcem mycích a leštících potřeb z jemnych kovových vláken. Naše produkty ve tvaru polštářků a pásů slouží k mechanickému odstraňování nečistot a finálnímu leštění povrchů v domácnosti i průmyslu.
+                    </p>
+                    <p class="mb-4">
+                        Nabízíme dva typy výrobků: čistou ocelovou vlnu pro profesionální čištění a variantu s probarveným sodným mýdlem pro efektivnější výsledky. Žádné ropné složky – ideální pro ekologické provozy.
+                    </p>
+                    <div class="bg-gradient-to-r from-stone-50 to-pink-50 p-6 rounded-lg border-l-4 border-pink-600">
+                        <p class="mb-0 font-medium text-gray-800">
+                            Široké portfolio produktů různých velikostí pro jemné domácí čištění i hrubé odstraňování nečistot z průmyslového vybavení.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -140,17 +196,17 @@
                 <h3 class="text-3xl font-bold text-center text-gray-900 mb-4" data-i18n="features.title">Proč si vybrat naše produkty</h3>
                 <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto" data-i18n="features.subtitle">Vytvářeno s péčí a pozorností k detailům</p>
                 <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-gradient-to-br from-stone-50 to-stone-100 p-8 rounded-xl shadow-md hover:shadow-xl transition border border-stone-200">
+                    <div class="bg-gradient-to-br from-stone-50 to-stone-100 p-8 rounded-xl shadow-md hover:shadow-xl transition border border-stone-200 animate-slide-in-up">
                         <div class="w-16 h-16 bg-stone-700 rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-8 h-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-8 h-8 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
                         <h4 class="text-xl font-semibold text-gray-900 mb-3" data-i18n="features.quality.title">Prémiová kvalita</h4>
                         <p class="text-gray-600" data-i18n="features.quality.description">Vyrobeno z vysoce kvalitních ocelových vláken, zajišťující trvanlivost a účinnost pro všechny vaše potřeby čištění a renovace.</p>
                     </div>
-                    <div class="bg-gradient-to-br from-amber-50 to-amber-100 p-8 rounded-xl shadow-md hover:shadow-xl transition border border-amber-200">
-                        <div class="w-16 h-16 bg-amber-600 rounded-lg flex items-center justify-center mb-4">
+                    <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-xl shadow-md hover:shadow-xl transition border border-pink-200 animate-slide-in-up delay-100">
+                        <div class="w-16 h-16 bg-pink-600 rounded-lg flex items-center justify-center mb-4">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
@@ -158,9 +214,9 @@
                         <h4 class="text-xl font-semibold text-gray-900 mb-3" data-i18n="features.handmade.title">Ruční výroba</h4>
                         <p class="text-gray-600" data-i18n="features.handmade.description">Každý produkt je pečlivě ručně vyráběn s pozorností k detailům, zajišťující konzistentní kvalitu a výkon.</p>
                     </div>
-                    <div class="bg-gradient-to-br from-stone-50 to-gray-100 p-8 rounded-xl shadow-md hover:shadow-xl transition border border-stone-200">
+                    <div class="bg-gradient-to-br from-stone-50 to-gray-100 p-8 rounded-xl shadow-md hover:shadow-xl transition border border-stone-200 animate-slide-in-up delay-200">
                         <div class="w-16 h-16 bg-gray-700 rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-8 h-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-8 h-8 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                             </svg>
                         </div>
@@ -171,13 +227,63 @@
             </div>
         </section>
 
+        <section class="py-16 px-4 bg-gradient-to-br from-pink-50 to-rose-50">
+            <div class="max-w-6xl mx-auto">
+                <h3 class="text-3xl font-bold text-center text-gray-900 mb-12">Proč zvolit WASCHMEISTER?</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-pink-200">
+                        <div class="w-16 h-16 bg-pink-600 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-3">Bez ropných složek</h4>
+                        <p class="text-gray-600">Naše produkty neobsahují ropné složky a jsou vhodné pro ekologické provozy a osoby pracující bez použití ropných čistidel.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-pink-200">
+                        <div class="w-16 h-16 bg-pink-600 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-3">Snadná likvidace</h4>
+                        <p class="text-gray-600">Vyrobeno z snadno rozložitelných surovin. Produkty lze bezpečně likvidovat jako běžný domovní odpad.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-pink-200 md:col-span-2 lg:col-span-1">
+                        <div class="w-16 h-16 bg-pink-600 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-3">Domácnost i průmysl</h4>
+                        <p class="text-gray-600">Univerzální použití jak v domácnosti, tak v průmyslu. Od jemného čištění keramiky po hrubé odstraňování nečistot z průmyslového vybavení.</p>
+                    </div>
+                </div>
+                <div class="mt-12 bg-white p-8 rounded-xl shadow-lg border border-pink-200">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Oproti klasické drátěnce</h4>
+                            <p class="text-gray-600">
+                                Oproti klasické drátěnce složené z nerezových spirál s příměsí chromu a niklu je výrobek WASCHMEISTER vyroben ze snadno rozložitelného surového kovu a mýdla, které lze bezpečně likvidovat jako běžný domovní odpad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="py-16 px-4">
             <div class="max-w-4xl mx-auto">
-                <div class="bg-gradient-to-r from-stone-700 to-stone-800 rounded-2xl shadow-2xl p-12 text-white">
+                <div class="bg-gradient-to-r from-stone-700 to-stone-800 rounded-2xl shadow-2xl p-6 md:p-12 text-white">
                     <div class="max-w-2xl mx-auto">
-                        <h3 class="text-4xl font-bold mb-4 text-center" data-i18n="cta.title">Připraveni objednat?</h3>
+                        <h3 class="text-4xl font-bold mb-4 text-center" data-i18n="cta.title">Jak vám můžeme pomoci?</h3>
                         <p class="text-xl mb-8 text-center text-stone-200" data-i18n="cta.description">
-                            Kontaktujte nás a probereme vaše potřeby nebo si objednejte. Jsme tu, abychom vám pomohli najít perfektní produkty z ocelové vaty pro váš projekt.
+                            Kontaktujte nás s jakýmikoliv dotazy ohledně našich produktů z ocelové vlny. Rádi vám poradíme a pomůžeme najít nejlepší řešení pro vaše potřeby.
                         </p>
                         <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6" id="contact-form">
                             <input type="hidden" name="access_key" value="5758f51e-2d7a-424c-b160-cb1941dc548c">
@@ -186,26 +292,47 @@
                             
                             <div>
                                 <label for="name" class="block text-stone-200 text-sm font-medium mb-2" data-i18n="form.name">Jméno</label>
-                                <input type="text" id="name" name="name" required 
-                                    class="w-full px-4 py-3 rounded-lg bg-stone-600 text-white placeholder-stone-400 border border-stone-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition">
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-3 rounded-lg bg-stone-600 text-white placeholder-stone-400 border border-stone-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition form-input-focus">
                             </div>
                             
                             <div>
                                 <label for="email" class="block text-stone-200 text-sm font-medium mb-2" data-i18n="form.email">Email</label>
-                                <input type="email" id="email" name="email" required 
-                                    class="w-full px-4 py-3 rounded-lg bg-stone-600 text-white placeholder-stone-400 border border-stone-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition">
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 rounded-lg bg-stone-600 text-white placeholder-stone-400 border border-stone-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition form-input-focus">
+                                <p class="text-stone-300 text-xs mt-1">Slouží pro zpětný kontakt</p>
                             </div>
                             
                             <div>
                                 <label for="message" class="block text-stone-200 text-sm font-medium mb-2" data-i18n="form.message">Zpráva</label>
-                                <textarea id="message" name="message" rows="5" required 
-                                    class="w-full px-4 py-3 rounded-lg bg-stone-600 text-white placeholder-stone-400 border border-stone-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition resize-none"></textarea>
+                                <textarea id="message" name="message" rows="5" required
+                                    class="w-full px-4 py-3 rounded-lg bg-stone-600 text-white placeholder-stone-400 border border-stone-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition resize-none form-input-focus"></textarea>
                             </div>
                             
-                            <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-4 px-10 rounded-lg shadow-lg transition transform hover:scale-105" data-i18n="form.submit">
+                            <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white font-semibold py-4 px-10 rounded-lg shadow-lg transition transform hover:scale-105" data-i18n="form.submit">
                                 Odeslat zprávu
                             </button>
                         </form>
+
+                        <div class="mt-8 pt-8 border-t border-stone-600/30">
+                            <div class="text-center">
+                                <h4 class="text-lg font-semibold text-stone-200 mb-4">Nebo nás kontaktujte přímo</h4>
+                                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                                    <div class="flex items-center text-stone-200">
+                                        <i class="fas fa-envelope text-pink-400 mr-3"></i>
+                                        <a href="mailto:waschmeister@seznam.cz" class="hover:text-pink-300 transition-colors">
+                                            waschmeister@seznam.cz
+                                        </a>
+                                    </div>
+                                    <div class="flex items-center text-stone-200">
+                                        <i class="fas fa-phone text-pink-400 mr-3"></i>
+                                        <a href="tel:+420777039629" class="hover:text-pink-300 transition-colors">
+                                            +420 777 039 629
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,14 +342,14 @@
             <div class="max-w-7xl mx-auto">
                 <h3 class="text-3xl font-bold text-center text-gray-900 mb-12" data-i18n="testimonials.title">Co říkají naši zákazníci</h3>
                 <div class="grid md:grid-cols-2 gap-8">
-                    <div class="border-l-4 border-amber-600 pl-6 py-4">
+                    <div class="border-l-4 border-pink-600 pl-6 py-4 animate-slide-in-left">
                         <p class="text-gray-700 text-lg mb-4 italic" data-i18n="testimonials.one.quote">
-                            "Kvalita těchto produktů z ocelové vaty je vynikající. Používám je pro své renovační projekty a pokaždé fungují perfektně."
+                            "Kvalita těchto produktů z ocelové vlny je vynikající. Používám je pro své renovační projekty a pokaždé fungují perfektně."
                         </p>
                         <p class="text-gray-900 font-semibold">— <span data-i18n="testimonials.one.author">Jan Novák</span></p>
                         <p class="text-gray-500 text-sm" data-i18n="testimonials.one.role">Specialista na renovace</p>
                     </div>
-                    <div class="border-l-4 border-stone-600 pl-6 py-4">
+                    <div class="border-l-4 border-stone-600 pl-6 py-4 animate-slide-in-right">
                         <p class="text-gray-700 text-lg mb-4 italic" data-i18n="testimonials.two.quote">
                             "Vyzkoušela jsem mnoho značek, ale nic se nevyrovná trvanlivosti a účinnosti těchto produktů. Vřele doporučuji!"
                         </p>
@@ -238,20 +365,20 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div class="text-center">
-                    <h4 class="text-white font-bold text-xl mb-4" data-i18n="footer.company.name">Ocelová vata</h4>
-                    <p class="text-stone-400 mb-4" data-i18n="footer.company.tagline">Prémiové produkty z ocelové vaty</p>
+                    <h4 class="text-white font-bold text-xl mb-4" data-i18n="footer.company.name">WASCHMEISTER</h4>
+                    <p class="text-stone-400 leading-relaxed" data-i18n="footer.company.combined">Prémiové produkty z ocelové vlny. Specializujeme se na vysoce kvalitní ocelovou vlnu pro čištění, renovaci a průmyslové aplikace od roku 2025.</p>
                 </div>
                 <div class="text-center">
                     <h4 class="text-white font-bold text-lg mb-4" data-i18n="footer.contact.title">Kontakt</h4>
                     <div class="flex justify-center gap-4">
                         <div class="flex flex-col items-center">
-                            <i class="fas fa-phone text-amber-400 mb-5 mt-1"></i>
-                            <i class="fas fa-envelope text-amber-400 mb-5"></i>
-                            <i class="fas fa-map-marker-alt text-amber-400 mt-1 mb-3"></i>
+                            <i class="fas fa-phone text-pink-400 mb-5 mt-1"></i>
+                            <i class="fas fa-envelope text-pink-400 mb-5"></i>
+                            <i class="fas fa-map-marker-alt text-pink-400 mt-1 mb-3"></i>
                         </div>
                         <div class="flex flex-col items-start text-left">
-                            <a href="tel:+420123456789" class="mb-3 hover:text-amber-400 transition" data-i18n="footer.contact.phone">+420 123 456 789</a>
-                            <a href="mailto:info@example.com" class="mb-3 hover:text-amber-400 transition" data-i18n="footer.contact.email">info@example.com</a>
+                            <a href="tel:+420123456789" class="mb-3 hover:text-pink-400 transition" data-i18n="footer.contact.phone">+420 123 456 789</a>
+                            <a href="mailto:info@example.com" class="mb-3 hover:text-pink-400 transition" data-i18n="footer.contact.email">info@example.com</a>
                             <div class="mb-1">
                                 <span class="block" data-i18n="footer.contact.address.line1">Adresa 123</span>
                                 <span class="block" data-i18n="footer.contact.address.line2">123 45 Město</span>
@@ -263,85 +390,30 @@
                 <div class="text-center">
                     <h4 class="text-white font-bold text-lg mb-4" data-i18n="footer.quicklinks.title">Rychlé odkazy</h4>
                     <ul class="space-y-2">
-                        <li><a href="#products" class="hover:text-amber-400 transition" data-i18n="footer.quicklinks.products">Produkty</a></li>
-                        <li><a href="#about" class="hover:text-amber-400 transition" data-i18n="footer.quicklinks.about">O nás</a></li>
-                        <li><a href="#contact" class="hover:text-amber-400 transition" data-i18n="footer.quicklinks.contact">Kontakt</a></li>
+                        <li><a href="#products" class="hover:text-pink-400 transition" data-i18n="footer.quicklinks.products">Produkty</a></li>
+                        <li><a href="#about" class="hover:text-pink-400 transition" data-i18n="footer.quicklinks.about">O nás</a></li>
+                        <li><a href="#contact" class="hover:text-pink-400 transition" data-i18n="footer.quicklinks.contact">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-stone-800 pt-8 text-center">
-                <p data-i18n="footer.copyright">&copy; 2025 Ocelová vata. Všechna práva vyhrazena.</p>
+                <p data-i18n="footer.copyright">&copy; 2025 WASCHMEISTER. Všechna práva vyhrazena.</p>
             </div>
         </div>
     </footer>
 
+    <div id="consent-banner" class="hidden fixed bottom-4 right-4 max-w-sm bg-white border border-stone-200 rounded-xl shadow-2xl z-50 p-5 md:p-6">
+        <p class="text-stone-700 text-sm mb-4" data-i18n="consent.message">Tato stránka používá nástroje pro analýzu návštěvnosti. Kliknutím na "Souhlasím" souhlasíte s jejich použitím.</p>
+        <div class="flex flex-col gap-2">
+            <button id="consent-accept" class="w-full px-4 py-2 bg-stone-800 text-white rounded-lg hover:bg-stone-700 transition-colors font-medium text-sm" data-i18n="consent.accept">Souhlasím</button>
+            <button id="consent-decline" class="w-full px-4 py-2 bg-stone-100 text-stone-700 rounded-lg hover:bg-stone-200 transition-colors font-medium text-sm" data-i18n="consent.decline">Odmítnout</button>
+        </div>
+    </div>
+
     <script type="module" src="../src/i18n.js"></script>
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
-            const closeIcon = document.getElementById('close-icon');
-            
-            menu.classList.toggle('hidden');
-            menuIcon.classList.toggle('hidden');
-            closeIcon.classList.toggle('hidden');
-        }
-        
-        function closeMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
-            const closeIcon = document.getElementById('close-icon');
-            
-            menu.classList.add('hidden');
-            menuIcon.classList.remove('hidden');
-            closeIcon.classList.add('hidden');
-        }
-        
-        document.getElementById('mobile-menu-button').addEventListener('click', toggleMobileMenu);
-        
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', closeMobileMenu);
-        });
-    </script>
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const form = this;
-            const formData = new FormData(form);
-            const messageDiv = document.getElementById('form-message');
-            
-            fetch(form.action, {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    showSuccessMessage(messageDiv, form);
-                } else {
-                    showErrorMessage(messageDiv);
-                }
-            })
-            .catch(error => {
-                showErrorMessage(messageDiv);
-            });
-        });
-        
-        function showSuccessMessage(messageDiv, form) {
-            const successText = window.getTranslation ? window.getTranslation('form.success') : 'Zpráva byla úspěšně odeslána! Brzy se vám ozveme.';
-            messageDiv.className = 'form-message p-6 rounded-xl mb-6 bg-green-600 text-white text-center font-semibold text-lg shadow-lg border-2 border-green-500';
-            messageDiv.innerHTML = '<div class="flex items-center justify-center gap-4"><svg width="20" height="20" class="flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>' + successText + '</span></div>';
-            messageDiv.classList.remove('hidden');
-            form.reset();
-        }
-        
-        function showErrorMessage(messageDiv) {
-            const errorText = window.getTranslation ? window.getTranslation('form.error') : 'Chyba při odesílání zprávy. Zkuste to prosím znovu.';
-            messageDiv.className = 'form-message p-6 rounded-xl mb-6 bg-red-600 text-white text-center font-semibold text-lg shadow-lg border-2 border-red-500';
-            messageDiv.innerHTML = '<div class="flex items-center justify-center gap-4"><svg width="20" height="20" class="flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>' + errorText + '</span></div>';
-            messageDiv.classList.remove('hidden');
-        }
-    </script>
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/consent.js"></script>
+    <script src="../src/js/repelling.js"></script>
 </body>
 </html>
 
