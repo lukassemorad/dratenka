@@ -2329,6 +2329,10 @@ video {
     padding: 1.5rem;
   }
 
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
