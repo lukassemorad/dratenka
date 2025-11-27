@@ -33,11 +33,12 @@ document.querySelectorAll('#mobile-menu a').forEach(link => {
 
 const nav = document.getElementById('main-nav');
 const mobileMenu = document.getElementById('mobile-menu');
+const chevronIcon = document.querySelector('.fa-chevron-down');
 let lastScroll = 0;
 
 function handleScroll() {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    
+
     if (currentScroll > 50) {
         nav.classList.add('transparent');
         if (!mobileMenu.classList.contains('hidden')) {
@@ -47,7 +48,16 @@ function handleScroll() {
         nav.classList.remove('transparent');
         mobileMenu.classList.remove('transparent');
     }
-    
+
+    // Pause chevron animation when scrolled down
+    if (chevronIcon) {
+        if (currentScroll > 100) {
+            chevronIcon.style.animationPlayState = 'paused';
+        } else {
+            chevronIcon.style.animationPlayState = 'running';
+        }
+    }
+
     lastScroll = currentScroll;
 }
 
@@ -91,4 +101,40 @@ function showErrorMessage(messageDiv) {
     messageDiv.innerHTML = '<div class="flex items-center justify-center gap-4"><svg width="20" height="20" class="flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>' + errorText + '</span></div>';
     messageDiv.classList.remove('hidden');
 }
+
+// Smooth scroll to products section
+function scrollToProducts() {
+    const productsSection = document.getElementById('products');
+    if (productsSection) {
+        productsSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
+// Scroll-triggered animations
+function initScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = 'running';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Observe all elements with scroll animation classes
+    document.querySelectorAll('.animate-slide-in-up').forEach(el => {
+        observer.observe(el);
+    });
+}
+
+// Initialize scroll animations when DOM is loaded
+document.addEventListener('DOMContentLoaded', initScrollAnimations);
 
